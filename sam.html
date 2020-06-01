@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<head>
+<link href="https://fonts.googleapis.com/css?family=Quicksand:wght@500" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Arimo:wght@700" rel="stylesheet">
+</head>
+  <title>About Sam</title>
+  <style>
+    body {
+      text-align: center;
+      background: url(https://i.imgur.com/Nwm86qX.jpg);
+      background-size: cover;
+      background-position: center;
+      color: white;
+      font-family: Quicksand:wght@500;
+    }
+    h1 {
+      font-size: 30px;
+      font-family: Arimo:wght@700;
+      }
+      
+    h2 {
+      font-size: 30px;
+      font-family: Arimo:wght@700;
+      }
+     
+     article {
+     max-width: 500px;
+     padding: 22px;
+     margin: 0 auto;
+     }
+
+     img {
+       margin: 0px 0px 0px 250px;
+       border: 5px dotted white;
+       right: 70px;
+     }
+    
+    p {
+      font-size: 22px;
+    }
+    
+    
+   
+</style>
+</head>
+
+<body>
+  <img src="https://i.imgur.com/mPtWgox.jpg?1">
+  <article>
+  <h1>About Sam</h1>
+  <p>I was born in South Korea and moved to United States when I was little.
+  I moved to Michigan and stayed until 2017. I attended Michigan State University and moved to Chicago after graduating from the University. I majored in Food Science and I am a foodie. 
+  <br>I have a cat named Leo and on my free times, I enjoy reading books and watching movies with Leo.</br> </p>
+
+  <button id="MSU" onclick="myFunction()">Click (Go Green!)</button> 
+   
+  <h2>Contact Information</h2>
+  <p>My email is schoi513@gmail.com<br> my number is 248-962-8034.</br></p> 
+    
+  </article>
+  
+  <script>
+  function myFunction(b){
+    // document.getElementById("MSU").style.color = "green"; 
+    var x = document.getElementsByTagName("P");
+    console.log (x);
+    for (var i = 0; i < x.length; i++) {
+      x[i].style.backgroundColor = "green";
+      console.log (x[i].innerHTML);
+    }
+  }
+
+ </script>
+</body>
